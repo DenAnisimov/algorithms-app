@@ -5,7 +5,7 @@ public class Algorithms {
     /**
      * @param numbers massive of data
      * @param target target number
-     * @return index of number in massive or -1 if target not found*/
+     * @return index of number in array or -1 if target not found*/
     public static int simpleSearch(int[] numbers, int target) {
         int index = -1;
         for(int i = 0; i < numbers.length; i++) {
@@ -19,7 +19,7 @@ public class Algorithms {
     /**
      * @param numbers massive of data
      * @param target target number
-     * @return index of number in massive or -1 if target not found*/
+     * @return index of number in array or -1 if target not found*/
     public static int binarySearch(int[] numbers, int target) {
         int low = 0;
         int high = numbers.length - 1;
