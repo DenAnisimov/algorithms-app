@@ -7,6 +7,11 @@ public class Main {
         long start = System.currentTimeMillis();
         Algorithms.simpleSearch(generateMassive(999_999_999), 999_999_998);
         long end = System.currentTimeMillis() - start;
+        System.out.println("Simple search milliseconds: " + end);
+
+        start = System.currentTimeMillis();
+        Algorithms.binarySearch(generateMassive(999_999_999), 999_999_998);
+        end = System.currentTimeMillis() - start;
         System.out.println("Binary search milliseconds: " + end);
     }
 
